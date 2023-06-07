@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Playground Functions</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section class="container">
+    <div class="item">
+      <p><strong>Obtenha o resultado lógico do operador E (&&)</strong></p>
+      <label for="animal1">Animal 1:</label>
+      <select id="animal1">
+        <option value="true">Verdadeiro</option>
+        <option value="false">Falso</option>
+      </select>
+      <label for="animal2">Animal 2:</label>
+      <select id="animal2">
+        <option value="true">Verdadeiro</option>
+        <option value="false">Falso</option>
+      </select>
+      <button id="buttonCompare">Comparar</button>
+      <p id="display"></p>
+    </div>
+    <div class="item">
+      <p><strong>Divida uma frase de acordo com a quantidade de palavras</strong></p>
+      <label for="sentence">Frase:</label>
+      <input type="text" id="sentence" placeholder="Digite uma frase">
+      <button id="buttonSplit">Dividir</button>
+      <p id="displaySplit"></p>
+    </div>
+    <div class="item">
+      <p><strong>Retorne a última e primeira palavra da frase</strong></p>
+      <label for="items">Itens:</label>
+      <input type="text" id="items" placeholder="Digite os itens separados por vírgula">
+      <button id="buttonConcat">Concatenar</button>
+      <p id="displayConcat"></p>
+    </div>
+    <div class="item">
+      <p><strong>Cálculo de pontos no futebol</strong></p>
+      <label for="wins">Vitórias:</label>
+      <input type="number" id="wins" placeholder="Digite o número de vitórias">
+      <label for="ties">Empates:</label>
+      <input type="number" id="ties" placeholder="Digite o número de empates">
+      <button id="buttonPoints">Calcular Pontos</button>
+      <p id="displayPoints"></p>
+    </div>
+    <div class="item">
+      <p><strong>Calcula o número de repetições do maior número</strong></p>
+      <label for="numbers">Números (separados por vírgula):</label>
+      <input type="text" id="numbers" placeholder="Digite os números separados por vírgula">
+      <button id="buttonCount">Contar</button>
+      <p id="displayCount"></p>
+    </div>
+    <div class="item">
+      <p><strong>Cálculo de área</strong></p>
+      <label for="base">Base:</label>
+      <input type="number" id="base" placeholder="Digite o valor da base">
+      <label for="height">Altura:</label>
+      <input type="number" id="height" placeholder="Digite o valor da altura">
+      <label for="form">Forma geométrica:</label>
+      <select id="form">
+        <option value="triângulo">Triângulo</option>
+        <option value="retângulo">Retângulo</option>
+      </select>
+      <button id="buttonArea">Calcular Área</button>
+      <p id="displayArea"></p>
+    </div>
+    <div class="item">
+      <p><strong>Encontre o gato mais próximo do rato</strong></p>
+      <label for="mouse">Posição do rato:</label>
+      <input type="text" id="mouse" placeholder="Digite a posição do rato">
+      <label for="cat1">Posição do gato 1:</label>
+      <input type="text" id="cat1" placeholder="Digite a posição do gato 1">
+      <label for="cat2">Posição do gato 2:</label>
+      <input type="text" id="cat2" placeholder="Digite a posição do gato 2">
+      <button id="buttonCatMouse">Verificar</button>
+      <p id="displayResult"></p>
+    </div>
+    <div class="item">
+      <p><strong>Verifique os números divisíveis por 3 e 5</strong></p>
+      <label for="numberFizz">Números:</label>
+      <input type="text" id="numberFizz" placeholder="Digite os números separados por vírgula">
+      <button id="buttonFizzBuzz">Verificar</button>
+      <p id="displayFizz"></p>
+    </div>
+    <div class="item">
+      <p><strong>Encode e Decode</strong></p>
+      <label for="encodeInput">Texto a ser codificado:</label>
+      <input type="text" id="encodeInput" placeholder="Digite o texto">
+      <button id="buttonEncode">Codificar</button>
+      <p id="displayEncodeResult"></p>
+      
+      <label for="decodeInput">Texto a ser decodificado:</label>
+      <input type="text" id="decodeInput" placeholder="Digite o texto codificado">
+      <button id="buttonDecode">Decodificar</button>
+      <p id="displayDecodeResult"></p>
+    </div>
+    <div class="item">
+      <p><strong>Criar Lista de Tecnologias</strong></p>
+      <label for="techArrayInput">Lista de Tecnologias:</label>
+      <input type="text" id="techArrayInput" placeholder="Digite as tecnologias separadas por vírgula">
+      <label for="nameInput">Nome:</label>
+      <input type="text" id="nameInput" placeholder="Digite o nome">
+      <button id="buttonCreateList">Criar Lista</button>
+      <ul id="displayTechList"></ul>
+    </div>
+    <div class="item">
+      <p><strong>Gerar Número de Telefone</strong></p>
+      <label for="phoneNumberInput">Array de Números:</label>
+      <input type="text" id="phoneNumberInput" placeholder="Digite os números separados por vírgula">
+      <button id="buttonGeneratePhoneNumber">Gerar Número</button>
+      <p id="displayPhoneNumber"></p>
+    </div>
+    <div class="item">
+      <p><strong>Verificar Triângulo</strong></p>
+      <label for="lineAInput">Lado A:</label>
+      <input type="number" id="lineAInput">
+      <label for="lineBInput">Lado B:</label>
+      <input type="number" id="lineBInput">
+      <label for="lineCInput">Lado C:</label>
+      <input type="number" id="lineCInput">
+      <button id="buttonCheckTriangle">Verificar Triângulo</button>
+      <p id="displayTriangleResult"></p>
+    </div>
+    <div class="item">
+      <p><strong>Hidratação</strong></p>
+      <label for="drinkInput">Bebidas:</label>
+      <input type="text" id="drinkInput" placeholder="Digite as bebidas consumidas">
+      <button id="buttonHydrate">Calcular Hidratação</button>
+      <p id="displayHydrationResult"></p>
+    </div>
+  </section>
+  <script src="src/challenges.js"></script>
+  <script src="src/challenges2.js"></script>
+</body>
+</html>
